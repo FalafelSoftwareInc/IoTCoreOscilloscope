@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="IoTOscilloscope.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IoTOscilloscope"
+    xmlns:telerikChart="using:Telerik.UI.Xaml.Controls.Chart"    
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:ConnectionId='6'                      Content="Start/Stop"/>
+                <TextBlock x:ConnectionId='7' x:Name="StatusText" Text="Waiting for initialization" Margin="10,30,10,10" TextAlignment="Center" FontSize="26.667" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock x:ConnectionId='2' x:Name="averageValueText" Text="{Binding RawAverage}" Margin="10,50,10,10" TextAlignment="Center" FontSize="26.667" />
+                <TextBlock x:ConnectionId='3' x:Name="averageText" Text="{Binding Average}" Margin="10,50,10,10" TextAlignment="Center" FontSize="26.667" />
+                <TextBlock x:ConnectionId='4' x:Name="minText" Text="{Binding Min}" Margin="10,50,10,10" TextAlignment="Center" FontSize="26.667" />
+                <TextBlock x:ConnectionId='5' x:Name="maxText" Text="{Binding Max}" Margin="10,50,10,10" TextAlignment="Center" FontSize="26.667" />
+            </StackPanel>
+            <telerikChart:RadCartesianChart x:ConnectionId='1' HorizontalAlignment="Stretch" VerticalAlignment="Top" x:Name="dataChart" Height="400">
+                <telerikChart:RadCartesianChart.VerticalAxis>
+                    <telerikChart:LinearAxis Minimum="{Binding GraphMin}" Maximum="{Binding GraphMax}"/>
+                </telerikChart:RadCartesianChart.VerticalAxis>
+                <telerikChart:RadCartesianChart.HorizontalAxis>
+                    <telerikChart:LinearAxis Minimum="-5" Maximum="55"/>
+                </telerikChart:RadCartesianChart.HorizontalAxis>
+                <telerikChart:ScatterPointSeries ItemsSource="{Binding Points}">
+                    <telerikChart:ScatterPointSeries.XValueBinding>
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="XValue"/>
+                    </telerikChart:ScatterPointSeries.XValueBinding>
+                    <telerikChart:ScatterPointSeries.YValueBinding>
+                        <telerikChart:PropertyNameDataPointBinding PropertyName="YValue"/>
+                    </telerikChart:ScatterPointSeries.YValueBinding>
+                </telerikChart:ScatterPointSeries>
+            </telerikChart:RadCartesianChart>
+        </StackPanel>
+    </Grid>
+</Page>
+

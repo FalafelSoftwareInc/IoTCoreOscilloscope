@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="GraphMin" />
+    <RootPropertyPathName Name="GraphMax" />
+    <RootPropertyPathName Name="GraphXMax" />
+    <RootPropertyPathName Name="Points" />
+    <RootPropertyPathName Name="LineSeries" />
+    <RootPropertyPathName Name="Max" />
+    <RootPropertyPathName Name="Min" />
+    <RootPropertyPathName Name="OneCycleMS" />
+    <RootPropertyPathName Name="RunMS" />
+    <RootPropertyPathName Name="SampleSize" />
+    <RootPropertyPathName Name="Status" />
+    <RootPropertyPathName Name="PositiveTrigger" />
+    <RootPropertyPathName Name="Normalize" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="IoTOscilloscope.MainViewModel" />
+    <RootType FullName="Falafel.Utilities.VisibilityConverter">
+      <RootProperty Name="Inverse" />
+    </RootType>
+    <RootType FullName="Falafel.Utilities.StringFormatValueConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.RadCartesianChart">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAxis" />
+      <RootProperty Name="HorizontalAxis" />
+      <RootProperty Name="Series" />
+    </RootType>
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.LinearAxis">
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Converter" />
+      <RootProperty Name="ConverterParameter" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.ScatterPointSeries">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="XValueBinding" />
+      <RootProperty Name="YValueBinding" />
+    </RootType>
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.ScatterLineSeries">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="XValueBinding" />
+      <RootProperty Name="YValueBinding" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Telerik.UI.Xaml.Controls.Chart.PropertyNameDataPointBinding">
+      <RootProperty Name="PropertyName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="StepFrequency" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="IoTOscilloscope.MainPage" />
+  </Roots.RootTypes>
+</Roots>

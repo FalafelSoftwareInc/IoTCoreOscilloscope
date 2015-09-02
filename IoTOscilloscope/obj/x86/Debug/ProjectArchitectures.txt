@@ -1,0 +1,1 @@
+C:\Users\Bary\OneDrive\Projects\IoTOscilloscope\IoTOscilloscope\IoTOscilloscope.csproj;x86
